@@ -127,7 +127,7 @@ export default function GetSellerInfo() {
                 variant="solid"
                 colorScheme="blue"
                 rightIcon={<FaArrowRightLong />}
-                href="https://www.facebook.com/KARKIxEDITZ"
+                href="https://media.istockphoto.com/id/1154370446/photo/funny-raccoon-in-green-sunglasses-showing-a-rock-gesture-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=kkZiaB9Q-GbY5gjf6WWURzEpLzNrpjZp_tn09GB21bI="
               >
                 Upgrade now
               </Button>
