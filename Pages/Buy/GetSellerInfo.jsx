@@ -122,10 +122,12 @@ export default function GetSellerInfo() {
             <Divider />
             <CardFooter>
               <Button
+                as="a"
                 width={"100%"}
                 variant="solid"
                 colorScheme="blue"
                 rightIcon={<FaArrowRightLong />}
+                href="https://www.facebook.com/KARKIxEDITZ"
               >
                 Upgrade now
               </Button>
