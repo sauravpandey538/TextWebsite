@@ -33,7 +33,7 @@ export default function Bodytext() {
           borderRadius={"30px"}
         >
           {" "}
-          WELCOME CHIEF - "SAURAV"
+          Install WordPress Plugin
         </Button>
       </Box>
       <Box>

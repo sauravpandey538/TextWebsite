@@ -1,7 +1,8 @@
 import { Box, Flex, Link, Text, Button, Spacer } from "@chakra-ui/react";
 import { GiProgression } from "react-icons/gi";
 import { IoIosArrowDown } from "react-icons/io";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import { Link as RouterLink } from "react-router-dom";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -50,36 +51,38 @@ export default function Header() {
           >
             <GiProgression />{" "}
             <Text as="span" ml={2} mt={2}>
-              SAURAV
+              <Link as={RouterLink} to="/">
+                Saurav
+              </Link>
             </Text>
           </Link>
 
           <Text display="inline-flex" alignItems="center">
-            <Link mx={2} href="#">
+            <Link mx={2} href="#product">
               Product
             </Link>
             <IoIosArrowDown />
           </Text>
           <Text display="inline-flex" alignItems="center" ml={4}>
-            <Link mr={2} href="#">
+            <Link mr={2} href="#connect">
               Connect
             </Link>
             <IoIosArrowDown />
           </Text>
           <Text display="inline-flex" alignItems="center" ml={4}>
-            <Link mr={2} href="#">
+            <Link mr={2} href="#learn">
               Learn
             </Link>
             <IoIosArrowDown />
           </Text>
           <Text display="inline-flex" alignItems="center" ml={4}>
-            <Link mr={2} href="#">
+            <Link mr={2} as={RouterLink} to="#company">
               Company
             </Link>
             <IoIosArrowDown />
           </Text>
           <Text display="inline-flex" alignItems="center" ml={4}>
-            <Link href="#" mr={2}>
+            <Link href="#pricing" mr={2}>
               Pricing
             </Link>
             <IoIosArrowDown />
@@ -88,7 +91,9 @@ export default function Header() {
         <Spacer />
         <Box>
           <Button mr={5} variant="unstyled" fontSize="xl" fontWeight={700}>
-            Login
+            <Link as={RouterLink} to="login">
+              Log in
+            </Link>
           </Button>
           <Button
             fontSize="xl"
