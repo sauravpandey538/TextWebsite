@@ -22,25 +22,25 @@ export default function GetSellerInfo() {
   const Sellerinfo = [
     {
       name: "Assignment",
-      inf: " Balance your work time, if you are busy for assignment.",
+      inf: "When you are entrusted with an assignment,you do your best.",
       cost: "500",
       services: [
         "Pay for your single assignment.",
         "Safe pay with esewa",
-        "Rely on us for a assignment",
-        "Return back money before 3 day of deadline if any error occurs.",
-        "Rely on us for your credentials details.",
-        "We promise for less than 80% similarities",
+        "Rely on us for assignments",
+        "Return back money within 3 days of deadline if any error occurs.",
+        "Rely on us for your credential details.",
+        "We promise for less than 75% similarities",
       ],
     },
     {
       name: "Subject",
-      inf: "Fully rely for a single subject",
+      inf: "Fully rely on us for a single subject",
       services: [
         "Pay for your subject assignment.",
         "Equivalent to 4 assignment count",
         "Rely on us for time",
-        "Return back full money before 3 day of deadline if any error occurs in any assignment count.",
+        "Return back your full money within 3 days of deadline if any error occurs in any assignment count.",
         "Rely on us for your credentials details.",
         "We promise for less than 75% similarities",
       ],
@@ -48,7 +48,7 @@ export default function GetSellerInfo() {
     },
     {
       name: "Semister",
-      inf: "Say good bye to your assignment for a semester. we will do everything.",
+      inf: "Say good bye to your assignments. We will do everything for you",
       services: [
         "Pay for your single assignment.",
         "Equivalent to 20 assignment count",
@@ -78,7 +78,7 @@ export default function GetSellerInfo() {
         {Sellerinfo.map((seller, index) => (
           <Card
             key={index}
-            minW="sm"
+            minW={{ base: "300px", lg: "sm" }}
             maxW={"sm"}
             minH={"md"}
             border={"2px solid black"}

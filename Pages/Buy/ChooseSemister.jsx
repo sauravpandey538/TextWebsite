@@ -46,7 +46,9 @@ export default function ChooseSemister() {
         {semDetails.map((sem) => (
           <Box key={sem.Semister}>
             <Card
-              minW="sm"
+              //   minW="sm"
+              minW={{ base: "300px", lg: "sm" }}
+              maxW={"sm"}
               minH={"sm"}
               py={"auto"}
               h={"100%"}
