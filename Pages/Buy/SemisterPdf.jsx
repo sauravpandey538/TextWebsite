@@ -40,18 +40,63 @@ export default function SemisterPdfBth({ Semister }) {
   ];
   return (
     <>
-      <Button
-        colorScheme="blue"
-        mx={"auto"}
-        mb={"20px"}
-        fontFamily="Arial, sans-serif"
-        gap={"10px"}
-        leftIcon={<FaBookOpenReader />}
-        onClick={onOpen}
-      >
-        {" "}
-        I belong to {Semister}'th Semester{" "}
-      </Button>
+      {Semister == 1 && (
+        <Button
+          colorScheme="blue"
+          mx={"auto"}
+          mb={"20px"}
+          fontFamily="Arial, sans-serif"
+          gap={"10px"}
+          leftIcon={<FaBookOpenReader />}
+          onClick={onOpen}
+        >
+          {Semister}'st Semester{" "}
+        </Button>
+      )}
+      {Semister == 2 && (
+        <Button
+          colorScheme="blue"
+          mx={"auto"}
+          mb={"20px"}
+          fontFamily="Arial, sans-serif"
+          gap={"10px"}
+          leftIcon={<FaBookOpenReader />}
+          onClick={onOpen}
+        >
+          {Semister}'nd Semester{" "}
+        </Button>
+      )}
+      {Semister == 3 && (
+        <Button
+          colorScheme="blue"
+          mx={"auto"}
+          mb={"20px"}
+          fontFamily="Arial, sans-serif"
+          gap={"10px"}
+          leftIcon={<FaBookOpenReader />}
+          onClick={onOpen}
+        >
+          {Semister}'rd Semester{" "}
+        </Button>
+      )}
+      {(Semister === 4 ||
+        Semister === 5 ||
+        Semister === 6 ||
+        Semister === 7 ||
+        Semister === 8) && (
+        <Button
+          colorScheme="blue"
+          mx={"auto"}
+          mb={"20px"}
+          fontFamily="Arial, sans-serif"
+          gap={"10px"}
+          leftIcon={<FaBookOpenReader />}
+          onClick={onOpen}
+        >
+          {Semister}'th Semester
+        </Button>
+      )}
+
       <Modal
         closeOnOverlayClick={false}
         isOpen={isOpen}

@@ -26,11 +26,11 @@ export default function GetSellerInfo() {
       cost: "500",
       services: [
         "Pay for your single assignment.",
-        "Safe pay with esewa",
-        "Rely on us for assignments",
+        "Safe pay with esewa.",
+        "Rely on us for assignments.",
         "Return back money within 3 days of deadline if any error occurs.",
         "Rely on us for your credential details.",
-        "We promise for less than 75% similarities",
+        "We promise for less than 75% similarities.",
       ],
     },
     {
@@ -38,24 +38,24 @@ export default function GetSellerInfo() {
       inf: "Fully rely on us for a single subject",
       services: [
         "Pay for your subject assignment.",
-        "Equivalent to 4 assignment count",
-        "Rely on us for time",
+        "Equivalent to 4 assignment count.",
+        "Rely on us for time.",
         "Return back your full money within 3 days of deadline if any error occurs in any assignment count.",
         "Rely on us for your credentials details.",
-        "We promise for less than 75% similarities",
+        "We promise for less than 75% similarities.",
       ],
       cost: "1500",
     },
     {
       name: "Semister",
-      inf: "Say good bye to your assignments. We will do everything for you",
+      inf: "Say good bye to your assignments. We will do everything for you.",
       services: [
         "Pay for your single assignment.",
-        "Equivalent to 20 assignment count",
-        "Rely on us for a full semester",
-        "Return back full money before 3 day of deadline of a submission if we fails for your  single assignment",
+        "Equivalent to 20 assignment count.",
+        "Rely on us for a full semester.",
+        "Return back full money before 3 day of deadline of a submission if we fails for your  single assignment.",
         "Rely on us for your credentials details.",
-        "We promise for less than 70% similarities",
+        "We promise for less than 70% similarities.",
       ],
       cost: "7000",
     },
@@ -63,7 +63,7 @@ export default function GetSellerInfo() {
 
   return (
     <>
-      <Heading color={"teal"} textAlign={"center"} mt={"100px"}>
+      <Heading color={"teal"} textAlign={"center"} mt={"100px"} pb={"35px"}>
         Subscribe to CollegeWorksPro{" "}
       </Heading>
       <Flex
